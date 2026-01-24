@@ -10,7 +10,7 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
 html {
@@ -40,4 +40,10 @@ html {
   font-family: 'StardosStencil';           /* ← SAME NAME */
   src: url('./assets/fonts/Stardos_Stencil/StardosStencil-Bold.ttf') format('truetype');
   font-weight: 700;
+}
+
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url('./assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
