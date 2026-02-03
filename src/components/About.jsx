@@ -47,7 +47,7 @@ function About() {
                     <br />
                     <br />
                     <p className="font-['StardosStencil'] text-white text-justify leading-relaxed text-[20px]">
-                        <span>I'm Faisal, a 25-year-old backend engineer based in Lagos. I studied Computer Science and went through the intense 12-month ALX Africa program where I really sharpened my backend skills.</span><br /><br />
+                        <span>I'm a 25-year-old backend engineer based in Lagos. I studied Computer Science and went through the intense 12-month ALX Africa program where I really sharpened my backend skills.</span><br /><br />
                         <span>I build APIs and databases that actually scale—Python/Flask and Java/Spring Boot are my main tools, with MySQL and MongoDB for data. I work with Redis for caching and performance optimization.</span><br /><br />
                         When projects need it, I jump into fullstack work with React and the usual frontend stuff.
                         If you need someone who writes clean, reliable code and can handle both backend architecture and fullstack work, let's talk.
