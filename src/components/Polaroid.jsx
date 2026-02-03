@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 function Polariod({ imageSrc, altText, caption, className = '' }) {
     return (
-        <div className={`absolute z-20 group ${className}`} style={{ perspective: '1200px', transformStyle: 'preserve-3d' }}>
+        <div className={`absolute z-20 group ${className}`}style={{perspective: '1200px', transformStyle: 'preserve-3d' }}>
 
             {/* The Card: Smaller border, bigger image area */}
             <div className="bg-[#d0d9d5] p-1 pb-4 rounded-sm shadow-md
                             transition-all duration-500 ease-out
                             [transform:rotateX(25deg)_rotateZ(var(--tw-rotate))]
-                            group-hover:[transform:rotateX(0deg)_scale(3.0)]
+                            group-hover:[transform:rotateX(0deg)_scale(2.8)]
                             group-hover:-translate-y-24 group-hover:rotate-0
                             w-16 md:w-20 h-auto cursor-pointer ring-1 ring-black/5">
 
@@ -17,7 +17,12 @@ function Polariod({ imageSrc, altText, caption, className = '' }) {
                     <img 
                         src={imageSrc} 
                         alt={altText} 
-                        className='w-full h-full object-cover block grayscale-[20%] group-hover:grayscale-0 transition-all duration-300'
+                        className={`w-full h-full object-cover block grayscale-[20%] group-hover:grayscale-0 transition-all duration-300 select-none [image-rendering:optimizeQuality]`}
+                        style={{
+                            imageRendering: '-webkit-optimize-contrast',
+                            WebkitTransform: 'translateZ(0)',
+                            transform: 'translateZ(0)'
+                        }}
                     />
                 </div>
 
